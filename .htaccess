@@ -1,0 +1,6 @@
+#AddHandler fcgid-script .html
+#FCGIWrapper "/dh/cgi-system/php54.cgi" .html
+
+
+
+AddType application/x-httpd-php .html .htm

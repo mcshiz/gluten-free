@@ -1,0 +1,131 @@
+
+
+/* ==========================================================================
+    custom styles
+   ========================================================================== */
+
+label {
+  padding-right: 1em;
+  font-size: 1.3em;
+  width: 5em;
+}
+
+input[type=checkbox] {
+  transform: scale(2,2);
+  margin: 0;
+  height: 1em;
+}
+
+#result {
+	margin-top: 1em;
+}
+.categoriesHeader {
+  width: 4em;
+  overflow: hidden;
+  border-bottom: 3px solid black;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 2em;
+}	
+
+.categories span {
+	height: 3.5em;
+	display: block;
+}
+
+.resultRow {
+  border-bottom: 1px solid #898787;
+  padding-left: 0.5em;
+  height: 3em;
+  position: relative;
+
+}
+.resultRow>b{
+	font-size: 2.25em;
+  	height: 3em;
+   	margin-right: 0.75em;
+}
+.resultRow span:nth-child(2){
+  display: inline-block;
+  top: -1px;
+  vertical-align: te;
+  vertical-align: text-bottom;
+  font-size: 1.5em;
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+}
+  .vote {
+  display: inline-block;
+  position: absolute;
+  top: 0.5em;
+  height: 2em;
+  overflow: hidden;
+  border: none;
+  width: 3em;
+  background: #e4e4e4;
+  border: 1px solid #898787;
+}
+.upvote{
+  	right: 5.5em;
+
+}
+.downvote{
+	right: 1em;
+}
+.toggleCategories {
+	margin-left: 1em;
+	display: none;
+
+}
+
+.celiacs-safe {
+    font-size: 0.85em;
+  	top: -0.75em;
+    left: 1.25em;
+    position: relative;
+    font-weight: 700;
+    font-family: inherit;
+}
+
+
+
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@Media screen and (max-width: 767px){
+	.search {
+		margin-top: 0px;
+	}
+	.resultRow {
+		height: auto;
+	}
+	.resultRow>b {
+		height: auto;
+		vertical-align: top;
+	}
+	.resultRow span:nth-child(2){
+		width: 40%
+	}	
+	.categoriesHeader {
+		width: auto;
+		margin-left: 0;
+	}
+	.categories {
+		display: none;
+	}
+	.toggleCategories {
+		display: inline-block;
+	}
+	.celiacs-safe {
+		  top: inherit;
+		  left: 0;
+	}
+}
+
+
+
+

@@ -1,0 +1,335 @@
+<?php 
+require_once("/gluten-free/php/init.php");
+$me = new GetList();
+$ll = $me->say();
+echo(($_SERVER['QUERY_STRING']));
+
+ ?>
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="shortcut icon" href="http://www.mcshiz.com/gluten-free/beer.ico">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+          <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+       
+
+
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+            .search {
+              display: block;
+              position: relative;
+              margin-top: 10em;  
+            }
+            .disclaimer{
+              margin-top: 2em
+            }
+            .gsc-search-box {
+              display: none;
+            }
+        </style>
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body>
+      <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-57717830-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Gluten-Free Alcohol</a>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+      <div class="col-xs-12 col-sm-4 dropdown">
+        <h4 class="categoriesHeader">Types <b class="toggleCategories glyphicon glyphicon-chevron-up"></b></h4>
+        <div class="categories col-xs-12"></div>
+      </div>
+        <div class="col-xs-12 col-sm-8 search">
+        <h2 class="text-center">Search for any brand of beer or alcohol</h2>
+          <input type="text" id="autocomplete" class=" form-control input-lg" placeholder="Search Everything">
+      
+      
+      <div class="row">
+        <div class="col-xs-12">
+          <div id="result">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+      <div class="col-xs-12">
+
+<div id="cse" class="text-center">Loading...</div>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<form action="/" id="cse-search-box" style="visibility: hidden">
+  <input type="text" name="q">
+  <input type="submit" name="sa" value="search">
+</form>
+<script type="text/javascript" src="http://www.google.com/cse/brand?form?cse-search-box&lang=en"></script>
+          <gcse:search></gcse:search>  
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <span class="add-new"><h3 class="text-center">Know of something not on the list? Add it!</h3></span>
+          <form class="newAlcohol form-horizontal">
+            <div class="form-group">
+              <label for="newName" class="col-xs-12 col-sm-2">Name</label>
+              <div class="col-xs-12 col-sm-10 ">
+                <input type="text" class="new-alcohol input-md form-control" id="newName" placeholder="Name">
+              </div>
+            </div>  
+            <div class="form-group">
+              <label for="newCategory" class="col-xs-12 col-sm-2">Category</label>
+              <div class="col-xs-12 col-sm-10">
+                <select name="category" id="newCategory" class="input-md form-control">
+                  <option value="">select all</option>
+                </select>
+              </div>
+            </div>
+            <button id="addNew" class="btn btn-primary" type="submit">Add it!</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  <div class="row">
+    <div class="col-xs-12 text-center disclaimer"><p>Warning these alcohols have not been verified as gluten free (although they were taken from somewhat reputable sources), please drink at your own risk.</p></div>
+  </div>
+      <hr>
+    </div>
+    </div> <!-- /container -->        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+  <script>
+    function getParameterByName(name) {
+      name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+      var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+      return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+  </script>
+  <script type="text/javascript">
+    google.load('search', '1');
+    google.setOnLoadCallback(function() {
+      var cse = new  google.search.CustomSearchControl('017127146269633774765:v8o_n1rd52e');
+      cse.draw('cse');
+      cse.execute(getParameterByName('q'));
+    }, true)
+  </script>
+        <script src="./js/vendor/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="./js/main.js"></script>
+        <script>
+        $('#submit').on('click', function(){
+          $newAlcohol = $('.new-alcohol').val();
+          if($data.indexOf($newAlcohol) == -1 ) {
+            $data.push($newAlcohol);
+          } else {
+            console.log("Found");
+          }
+          console.log($newAlcohol);
+        });
+var ar = JSON.parse( <?php echo json_encode($ll) ?> );
+
+// iterate over array of object and make 
+// two sub arrays one containing only names
+// the other containing only unique categories
+var names = [];
+var categories = [];
+for (var i = 0; i < ar.length; i++) {
+  names.push(ar[i]['name'])
+  if(categories.indexOf(ar[i]['category']) == -1 && ar[i]['category'] != ""){
+  categories.push(ar[i]['category'])
+}
+};
+
+var rotation = 0;
+
+jQuery.fn.rotate = function(degrees) {
+    $(this).css({'-webkit-transform' : 'rotate('+ degrees +'deg)',
+                 '-moz-transform' : 'rotate('+ degrees +'deg)',
+                 '-ms-transform' : 'rotate('+ degrees +'deg)',
+                 'transform' : 'rotate('+ degrees +'deg)'});
+    return $(this);
+};
+
+$('.dropdown').children('h4').on('click, touchstart', function(event) {
+  event.preventDefault();
+   rotation += 180;
+ $('.glyphicon-chevron-up').rotate(rotation);
+  $('.categories').slideToggle(400)
+});
+
+// show a list of categories 
+// build new category select options
+for (var i = categories.length - 1; i >= 0; i--) {
+  $('.categories').append('<span><label>'+categories[i]+'</label><input class="input-lg checkbox-inline category-check" value="'+categories[i]+'" type="checkbox"><br></span>');
+  $('#newCategory').append('<option value="'+categories[i]+'">'+categories[i]+'</option>');
+};
+$('#newCategory').append('<option value="Other">Other</option>');
+
+function countVotes(choice){
+  $c = null
+  if(parseInt(choice) >= 3) {
+    $c= "bg-success";
+  } else if(parseInt(choice) < 0 ) {
+    $c="bg-danger";
+  } else {
+    $c = "";
+  };
+  return $c
+}
+cdiv = '<span class="celiacs-safe text-success">Celiacs Warning!</span>';
+
+$('.category-check').change(function() {
+  //add all names from list where category = $showList
+  if($(this).is(":checked")) {
+    $showList = $(this).val();
+    for (var k in ar) {
+        if (ar.hasOwnProperty(k)) {
+          if (ar[k]['category'] == $showList){     
+            $c = countVotes(ar[k].votes);
+            ar[k]['celiacs'] > 0 || (ar[k]['votes'] * -2) > 0 ? $celiacs = cdiv : $celiacs = "";
+            $('#result').prepend('<div class="resultRow myhover '+$c+'" data-category="'+$showList+'" data-id="'+ar[k]["id"]+'" ><b data-id="'+ar[k]["id"]+'" class="votes">'+ar[k]["votes"]+'</b><span onclick="searchMe('+k+')">'+ar[k]["name"]+'</span>'+$celiacs+'<span class="comments"><a href="?selecton='+ar[k]["name"]+'">Comments (0)</span><button class="vote upvote" type="button" onclick="update('+k+',true)"><b class="glyphicon glyphicon-arrow-up text-success"></b></button><button class="vote downvote" type="button" onclick="update('+k+',false)"><b class="glyphicon glyphicon-arrow-down text-danger"></b></button></div>');
+      };
+    };
+  };
+  } else {
+    //remove all names from list where category = $categoryList
+    $hideList = $(this).val();
+    $ee = $('#result').children('div').filter(function() { 
+      return $(this).data("category") == $hideList
+    }).remove()
+  } 
+});
+function search(key){
+  countVotes(ar[key].votes)
+  $celiacs = null;
+            ar[key]['celiacs'] > 0 || (ar[key]['votes'] * -2) > 0 ? $celiacs = cdiv : $celiacs = "";
+  $('#result').html('<div class="resultRow myhover '+$c+'" data-category="'+ar[key]["category"]+'" data-id="'+ar[key]["id"]+'"><b data-id="'+ar[key]["id"]+'" class="votes">'+ar[key]["votes"]+'</b><span>'+ar[key]["name"]+'</span>'+$celiacs+'<span class="comments"><a href="#">Comments (0)</span><button class="vote upvote" type="button" onclick="update('+key+',true)"><b class="glyphicon glyphicon-arrow-up text-success"></b></button><button class="vote downvote" type="button" onclick="update('+key+',false)"><b class="glyphicon glyphicon-arrow-down text-danger"></b></button></div>');
+  $(".gsc-input").val( ar[key].name + " alcohol");
+  document.activeElement.blur();
+  $('.gsc-search-button').trigger('click');
+}
+
+function searchMe(key) {
+  $obj = ar[key];
+  $('#autocomplete').val($obj.name);
+  search(key);
+}
+
+//populate autocomplete list with array of names
+$data = names;
+$( "#autocomplete" ).autocomplete({
+  select: function(event, ui) { console.log(event)},
+  source: $data
+});
+
+$('#autocomplete').on('autocompleteselect touchstart', function(event, ui){
+  //ui.item.value = dropdown list value -- name of alcohol
+  //search data array for object with matching name
+  //probably not the best way to do this -- come back later
+  for (var i = ar.length - 1; i >= 0; i--) {
+    if (ar[i].name == ui.item.value) {
+      search(i);
+      return;
+    }
+  };
+  
+});
+
+function update(key, v){
+  if(v == true) {
+    ++ar[key].votes;
+  } else {
+    --ar[key].votes;
+  };
+  var json = JSON.stringify(ar[key]);
+  $.ajax({
+    type: "POST",
+    data: {
+      ajaxData :json
+    },
+    url: "/gluten-free/php/ajax.php",
+    dataType: "json",
+    beforeSend: function() {
+    },
+    complete: function(data) {
+      if (data.responseText == "voteLimit") {
+        alert("You voted to many times today");
+      } else {
+        var count = ar[key].votes;
+        $('.votes[data-id="'+ar[key].id+'"]').text(count);
+      }
+    },
+    fail: function(data){
+      console.log(data);
+    }
+  });
+}
+  function addNew() {
+    $name = $('#newName');
+    $category = $('#newCategory');
+    $nd = {"id":"","name": $name.val(), "free": "", "votes":"1", "category":$category.val(), "celiacs": "0"};
+    var json = JSON.stringify($nd);
+    console.log(json)
+    $.ajax({
+      type: "POST",
+      data: {
+        ajaxData :json
+      },
+      url: "/gluten-free/php/ajax.php",
+      dataType: "json",
+      beforeSend: function() {
+      },
+      complete: function(data) {
+        $('.add-new').append('<h2 class="text-center">Thanks!</h2>');
+           $name.val("");
+            $category.prop('selectedIndex',0);
+      },
+      fail: function(data){
+        console.log(data);
+      }
+    }); 
+  }
+$('.newAlcohol').submit(function(event) {
+  if($('#newCategory').val() == "" || $('#newName').val() == ""){
+    alert("Please Enter A Name & Select A Category");
+    return false;
+  } else {
+    addNew();
+    event.preventDefault();
+  }
+});
+</script>
+
+    </body>
+</html>

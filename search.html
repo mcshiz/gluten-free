@@ -1,0 +1,151 @@
+<pageUrl>/search</pageUrl>
+<title>Search Results - Wholesale Solar</title>
+<metaDescription>Renewable energy site solar search engine. Information and solar power products.</metaDescription>
+<metaKeywords></metaKeywords>
+<headLinks>
+	<link rel="stylesheet" type="text/css" href="/css/loading-spinner.css">
+</headLinks>
+<style>
+	.search {
+		width: 100%;
+	}
+
+	#cse-search-box-page {
+		padding: 1.5em;
+		background-color: #e4e4e4;
+		margin-bottom: 1em;
+		border: 1px solid #083972;
+		border-radius: 5px;
+	}
+
+	.searchBtn {
+		margin-bottom: 1em;
+		width: 75%;
+
+	}
+
+	.btn.input-md {
+		box-shadow: rgba(0, 0, 0, 1) 0 0 0;
+		text-shadow: rgba(0, 0, 0, .4) 0 1px 0;
+		background: -webkit-linear-gradient(bottom, #B1B7BD, #CBCFD3);
+	}
+
+	.btn.input-md:hover, .btn.input-md:focus {
+		border-top-color: #666B6F;
+		background: #81878C;
+
+	}
+
+	.btn.ucAddToCartDefault {
+		padding: 6px 12px;
+		width: 100%;
+	"
+	}
+
+	.btn.ucAddToCartDefault:hover, .btn.ucAddToCartDefault:focus {
+		border-top-color: #083972;
+		background: #083972;
+		color: #fff;
+	}
+
+</style>
+<contentSection>
+
+
+	<div class="row">
+		<div class="col-xs-12"><h5 class="titleRedLg">Search Results</h5></div>
+		<br/>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12 center-block">
+			<div id="cse-search-box-page">
+				<form action="/search" method="get" style="display: inline-block; width: 100%">
+					<input type="hidden" name="cx" value="006435196072562829002:57yxrli0cuq"/>
+					<input type="hidden" name="cof" value="FORID:11;NB:1"/>
+					<input type="hidden" name="ie" value="UTF-8"/> <input type="hidden" name="filter" value="0"/>
+					<input type="hidden" name="bgresponse" id="bgresponse"/>
+					<input type="text" name="q" class="search input-lg" placeholder="Enter a search term or product ID"/> <br/> <br/>
+
+					<div class="row-fluid">
+                <span class="hidden-xs  col-sm-4">
+                  <input type="button" value="&larr; Back to Last Page?" onClick="history.go(-1)" class="btn input-md" style=""/>
+                </span>
+                <span class="text-center col-xs-12 col-sm-4">
+                  <input type="submit" name="sa" value="Search this Site" class="btn ucAddToCartDefault" style=""/>
+                </span>
+
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		[{if (isset($query) && ctype_digit($query)) {echo writeProductSearchHit($query);} }]
+
+		<div class="give-us-a-call" style="display: none; text-align: center">Can't find it? Give us a call at
+			<span class="title2">[{ echo($GLOBALS['ourPhoneNumber']); }]</span>.
+		</div>
+
+		<div class="col-xs-12">
+			<div id="loading-message" class="title2" style="margin: auto; text-align: center; font-size: 16pt; margin-top: 20pt">
+		<span id="loading" style="display: block;">
+    	Searching...
+			<div class="loading-container" style=" transform: scale(3,3); margin-top: -350px">
+				<div id="loader"></div>
+				<div class="bar bar1"></div>
+				<div class="bar bar2"></div>
+				<div class="bar bar3"></div>
+				<div class="bar bar4"></div>
+				<div class="bar bar5"></div>
+				<div class="bar bar6"></div>
+				<div class="bar bar7"></div>
+			</div>
+  		</span>
+			</div>
+			<gcse:searchresults-only></gcse:searchresults-only>
+		</div>
+		<div class="give-us-a-call" style="display: none; text-align: center">Can't find it? Give us a call at
+			<span class="title2">[{ echo($GLOBALS['ourPhoneNumber']); }]</span>.
+		</div>
+	</div>
+
+</contentSection>
+<scriptSection>
+
+	<script>
+
+		//load custom search
+		(function () {
+			var cx = '006435196072562829002:57yxrli0cuq'; //017127146269633774765:wxanvu65r9c
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			'//www.google.com/cse/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+
+			//prime callback to hide loading indicator
+			window.__gcse = {callback: hideLoadingMessage};
+
+		})();
+
+
+		function hideLoadingMessage() {
+//	$('#loading-message').spin(false);
+			$('#loading-message').remove();
+			$('.give-us-a-call').show();
+		}
+
+	</script>
+	<script>
+		function getParameterByName(name) {
+			name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+			var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+				results = regex.exec(location.search);
+			return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+		$('.search.input-lg').attr('value', getParameterByName('q'));
+	</script>
+</scriptSection>

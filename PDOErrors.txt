@@ -1,0 +1,103 @@
+exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: YES)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: YES)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: YES)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: YES)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: YES)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: NO)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', '')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: NO)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', '')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', '')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', '')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'dev'@'localhost' (using password: NO)' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', '')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}exception 'PDOException' with message 'SQLSTATE[HY000] [1044] Access denied for user 'dev'@'localhost' to database 'gluten'' in /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php:14
+Stack trace:
+#0 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(14): PDO->__construct('mysql:host=loca...', 'dev', 'solar123')
+#1 /Users/brian/Documents/portfolio/glueten-free/php/pdo-connect.php(32): connect_pdo->__construct()
+#2 /Users/brian/Documents/portfolio/glueten-free/php/init.php(2): require_once('/Users/brian/Do...')
+#3 /Users/brian/Documents/portfolio/glueten-free/index.html(1): require_once('/Users/brian/Do...')
+#4 {main}
