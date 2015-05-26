@@ -1,8 +1,10 @@
 <?php 
 require_once("/gluten-free/php/init.php");
+
 $me = new GetList();
 $ll = $me->say();
-echo(($_SERVER['QUERY_STRING']));
+
+
 
  ?>
 <!doctype html>
@@ -218,7 +220,7 @@ $('.category-check').change(function() {
           if (ar[k]['category'] == $showList){     
             $c = countVotes(ar[k].votes);
             ar[k]['celiacs'] > 0 || (ar[k]['votes'] * -2) > 0 ? $celiacs = cdiv : $celiacs = "";
-            $('#result').prepend('<div class="resultRow myhover '+$c+'" data-category="'+$showList+'" data-id="'+ar[k]["id"]+'" ><b data-id="'+ar[k]["id"]+'" class="votes">'+ar[k]["votes"]+'</b><span onclick="searchMe('+k+')">'+ar[k]["name"]+'</span>'+$celiacs+'<span class="comments"><a href="?selecton='+ar[k]["name"]+'">Comments (0)</span><button class="vote upvote" type="button" onclick="update('+k+',true)"><b class="glyphicon glyphicon-arrow-up text-success"></b></button><button class="vote downvote" type="button" onclick="update('+k+',false)"><b class="glyphicon glyphicon-arrow-down text-danger"></b></button></div>');
+            $('#result').prepend('<div class="resultRow myhover '+$c+'" data-category="'+$showList+'" data-id="'+ar[k]["id"]+'" ><b data-id="'+ar[k]["id"]+'" class="votes">'+ar[k]["votes"]+'</b><span onclick="searchMe('+k+')">'+ar[k]["name"]+'</span>'+$celiacs+'<span class="comments"><a href="?comments='+ar[k]["id"]+'">Comments (0)</span><button class="vote upvote" type="button" onclick="update('+k+',true)"><b class="glyphicon glyphicon-arrow-up text-success"></b></button><button class="vote downvote" type="button" onclick="update('+k+',false)"><b class="glyphicon glyphicon-arrow-down text-danger"></b></button></div>');
       };
     };
   };

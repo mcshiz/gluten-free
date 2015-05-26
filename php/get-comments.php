@@ -1,17 +1,16 @@
 <?php 
 require_once("/gluten-free/php/pdo-core.php");
 
-class GetList {
+class GetComments {
 
-public function getList() {
-    $sql = "SELECT * FROM `gluten-free` ORDER BY `votes` ASC";
+public function getList($id) {
+    $sql = "SELECT * FROM `gluten-free` WHERE `id` = :id";
     try
     {
 
         $pdoCore = Core::getInstance();
         $pdoObject = $pdoCore->dbh->prepare($sql);
-        $category = "Beer";
-        $queryArray = array(':category' => $category);
+        $queryArray = array(':id' => $id);
         
         if ($pdoObject->execute($queryArray)) {
 
